@@ -1,0 +1,23 @@
+body {
+    background-color: #aea7e6; /* você pode trocar por qualquer cor */
+}
+
+.perfil img {
+    width: 220px;
+    height: 200px;
+    border: 4px solid white;     /* borda branca */
+    border-radius: 15px;          /* deixa a imagem com cantos levemente arredondados */
+    object-fit: cover;            /* garante que a imagem preencha bem o espaço */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* opcional: adiciona sombra pra destacar */
+}
+
+a {
+    color: white;               /* cor do link */
+    text-decoration: none;     /* tira o sublinhado */
+    transition: 0.3s ease;     /* suaviza o efeito */
+}
+
+a:hover {
+    color: #00aaff;            /* cor ao passar o mouse (você pode trocar) */
+    text-shadow: 0 0 5px white; /* brilho leve no texto */
+}

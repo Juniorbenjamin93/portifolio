@@ -1,0 +1,48 @@
+a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: rgb(22, 21, 22); /* cor de fundo escura */
+    color: white;                     /* cor da letra */
+    text-decoration: none;
+    border-radius: 8px;               /* cantos levemente arredondados */
+    transition: 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 0 0 transparent;
+}
+
+a:hover {
+    background-color: #00aaff;        /* muda a cor de fundo ao passar o mouse */
+    color: white;
+    text-shadow: 0 0 8px white;       /* brilho no texto */
+    box-shadow: 0 0 12px #00aaff;     /* brilho no botão */
+}
+
+.botoes-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente (se quiser) */
+    gap: 20px;               /* Espaço entre os botões */
+    height: 50vh;           /* Ocupa altura total da tela (opcional) */
+}
+
+.btn-voltar {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    background-color: #878084;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-voltar:hover {
+    background-color: #181718;
+  }
+  
