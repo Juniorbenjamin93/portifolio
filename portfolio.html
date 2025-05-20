@@ -1,113 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Portfólio</title> <link rel="stylesheet" href="style3.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-    }
-
-    header {
-      background: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .intro {
-      text-align: center;
-      padding: 20px;
-    }
-
-    .galeria {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .trabalho {
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .trabalho:hover {
-      transform: scale(1.05);
-    }
-
-    .trabalho img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .trabalho a {
-      display: block;
-      text-align: center;
-      padding: 10px;
-      text-decoration: none;
-      background: #0078D4;
-      color: white;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #333;
-      color: #fff;
-      margin-top: 40px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Benjamin Junior</title>
+    <link rel="stylesheet" href="style3.css">
 </head>
 <body>
+    <header class="header">
+        <a href="index.html" class="logo">Benjamin Junior</a>
+        <nav class="navbar">
+            <a href="sobre.html">Sobre Mim</a>
+            <a href="portfolio.html" class="active">Portfólio</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
 
-  <header>
-    <h1>Meu Portfólio</h1>
-  </header>
+    <section class="portfolio-container">
+        <div class="intro">
+            <h1 class="title-3d">Meus Projetos</h1>
+            <p>Design e soluções criativas. Conheça alguns dos meus trabalhos!</p>
+        </div>
 
-  <section class="intro">
-    <p> Design e soluções criativas. Veja abaixo alguns dos meus trabalhos!</p>
-  </section>
+        <div class="galeria">
+            <!-- Projeto 1 -->
+            <div class="trabalho">
+                <img src="jrm.png" alt="JRM Veículos">
+                <div class="trabalho-info">
+                    <h3>JRM Veículos</h3>
+                    <p>Sistema de gerenciamento de veículos</p>
+                    <a href="https://jrm-veiculos.vercel.app/" target="_blank" class="btn">Ver Projeto</a>
+                </div>
+            </div>
 
-  <section class="galeria">
-    <!-- Projeto 1 -->
-    <div class="trabalho">
-      <img src="jrm.png" alt="Projeto 1">
-      <a href="https://jrm-veiculos.vercel.app/" target="_blank">Ver Projeto 1</a>
+            <!-- Projeto 2 -->
+            <div class="trabalho">
+                <img src="ism.png" alt="ISM Project">
+                <div class="trabalho-info">
+                    <h3>ISM Project</h3>
+                    <p>Interface moderna e responsiva</p>
+                    <a href="https://sparkly-paprenjak-f43c25.netlify.app/" target="_blank" class="btn">Ver Projeto</a>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="trabalho">
+                <img src="donut.png" alt="Donut Shop">
+                <div class="trabalho-info">
+                    <h3>Donut Shop</h3>
+                    <p>E-commerce de donuts artesanais</p>
+                    <a href="https://donutfeitoporclaudiaefilha.netlify.app/" target="_blank" class="btn">Ver Projeto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/junior-benjamin-649567340/" target="_blank">
+            <img src="linkdin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Juniorbenjamin93" target="_blank">
+            <img src="git.jpeg" alt="GitHub">
+        </a>
+        <a href="curriculo.pdf" target="_blank">
+            <img src="word.jpg" alt="Currículo Word">
+        </a>
     </div>
 
-    <!-- Projeto 2 -->
-    <div class="trabalho">
-      <img src="ism.png" alt="Projeto 2">
-      <a href="https://sparkly-paprenjak-f43c25.netlify.app/" target="_blank">Ver Projeto 2</a>
-    </div>
-
-    <!-- Projeto 3 -->
-    <div class="trabalho">
-      <img src="donut.png" alt="Projeto 3">
-      <a href="https://donutfeitoporclaudiaefilha.netlify.app/" target="_blank">Ver Projeto 3</a>
-    </div>
-
-    <!-- Adicione mais projetos conforme quiser -->
-  </section>
-  <a href="index.html" class="btn-voltar">← Voltar</a>
-
-
-  <footer class="rodape">
-    <p>© 2025 - Desenvolvido por Benjamin Ribeiro Soares Junior</p>
-  </footer>
-  
-
+    <footer class="rodape">
+        <p>© 2024 - Desenvolvido por <strong>Benjamin Junior</strong></p>
+    </footer>
 </body>
 </html>

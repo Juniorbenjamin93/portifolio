@@ -1,277 +1,201 @@
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
 body {
-    backgroud: rgb(49, 13, 49)
-    color rgb(215, 247, 89);
-    }
+    background: linear-gradient(to right, #1a1a1a, #2d2d2d);
+    color: #fff;
+    min-height: 100vh;
+}
 
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px;
-    background: rgb(28, 1, 83);
+    padding: 1.5rem 10%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    text-align: center; /* Centraliza o texto */
-
 }
 
 .logo {
-    font-size: 25px;
-    color:antiquewhite;
+    font-size: 2rem;
+    color: #00aaff;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .navbar a {
-    font-size: 18px;
-    color:antiquewhite;
+    font-size: 1.15rem;
+    color: #fff;
     text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: .3s;
+    margin-left: 2.5rem;
+    transition: color 0.3s;
 }
 
 .navbar a:hover {
-    color:rgb(38, 28, 47)
-}
-
-.Casa {
-    height: 100vh;
-   display: flex;
-   align-items: center;
-   padding: 0 10%;
-
-}
-
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    background-color: #121212;
-    color: #fff;
-    text-align: center;
-}
-
-/* Seção principal */
-.casa {
-    display: flex;
-    justify-content: flex-start; /* Alinha à esquerda */
-    align-items: center;
-    height: 100vh;
-    padding: 20px 40px; /* Adiciona espaço à esquerda */
-    background: linear-gradient(135deg, #1e1e1e, #333);
-}
-
-.inicio-conteudo {
-    max-width: 600px;
-}
-
-h1 {
-    font-size: 36px;
-    font-weight: bold;
-}
-
-h1 span {
     color: #00aaff;
 }
 
-h3 {
-    font-size: 20px;
-    color: #bbb;
-    margin-bottom: 15px;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #ddd;
-}
-
-/* Botões */
-.btn-box {
-    margin-top: 20px;
-}
-
-.btn {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #00aaff;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 16px;
-    margin: 5px;
-    transition: 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #0088cc;
-    transform: scale(1.05);
-}
-
-/* Container principal */
 .casa {
+    min-height: 100vh;
     display: flex;
-    justify-content: space-between; /* Separa o conteúdo e a imagem */
     align-items: center;
-    height: 100vh;
-    padding: 20px 40px;
-    background: linear-gradient(135deg, #1e1e1e, #333);
+    padding: 0 10%;
 }
 
-/* Conteúdo alinhado à esquerda */
-.inicio-conteudo {
-    max-width: 600px;
-}
-
-.perfil {
-    position: absolute;
-    right: 20px; /* Ajusta a distância da borda direita */
-    bottom: 20px; /* Ajusta a distância da borda inferior */
-}
-
-.perfil img {
-    width: 500px;
-    height: 420px;
-    border-radius: 50%;
-    border: 4px solid #00aaff;
-    opacity: 0.5; /* Deixa semi-transparente */
-    transition: 0.3s ease-in-out;
-}
-
-
-/* Efeito ao passar o mouse */
-.perfil img:hover {
-    opacity: 1; /* Fica totalmente visível */
-    transform: scale(1.1); /* Aumenta um pouco */
-}
-
-
-/* Estilo do Cabeçalho */
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #222;
-    padding: 15px 20px;
+.content-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 80px;
 }
 
-/* Nome do Desenvolvedor */
-.logo {
-    font-size: 22px;
-    font-weight: bold;
+.inicio-conteudo {
+    flex: 1;
+    max-width: 600px;
+}
+
+.title-3d {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 170, 255, 0.3),
+                 3px 3px 0 #00aaff;
+}
+
+.title-3d span {
     color: #00aaff;
-    text-decoration: none;
 }
 
-/* Navegação */
-.navbar a {
+.inicio-conteudo h3 {
+    font-size: 1.5rem;
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+}
+
+.inicio-conteudo p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #f0f0f0;
+}
+
+.btn-box {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn.primary {
+    background: #00aaff;
     color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 0 15px;
-    transition: color 0.3s ease-in-out;
 }
 
-.navbar a:hover {
+.btn.secondary {
+    border: 2px solid #00aaff;
     color: #00aaff;
 }
 
-/* Responsivo (para telas menores) */
-@media (max-width: 768px) {
-    .header {
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 170, 255, 0.4);
+}
+
+.perfil {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.perfil img:hover {
+    transform: scale(1.02);
+}
+
+.social-icons {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.rodape {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 968px) {
+    .content-container {
         flex-direction: column;
         text-align: center;
+        padding-top: 100px;
     }
-    
-    .navbar {
-        margin-top: 10px;
+
+    .title-3d {
+        font-size: 2.5rem;
+    }
+
+    .perfil img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .btn-box {
+        justify-content: center;
     }
 
     .navbar a {
-        display: block;
-        margin: 5px 0;
+        margin-left: 1.5rem;
+        font-size: 1rem;
     }
-}
-
-/* Container dos ícones sociais */
-.social-icons {
-    position: fixed;
-    bottom: 60px; /* Ajuste para não ficar muito baixo */
-    left: 50%;
-    transform: translateX(-50%); /* Centraliza os ícones na tela */
-    display: flex;
-    gap: 20px; /* Espaçamento entre os ícones */
-    background: rgba(11, 164, 225, 0.7); /* Fundo levemente escuro e transparente */
-    padding: 10px 20px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
-}
-
-/* Ícones sociais */
-.social-icons a img {
-    width: 35px; /* Define um tamanho pequeno para os ícones */
-    transition: 0.3s ease-in-out;
-    filter: brightness(0.8);
-    border-radius: 50%; /* Deixa os ícones arredondados */
-}
-
-/* Efeito ao passar o mouse */
-.social-icons a img:hover {
-    transform: scale(1.3); /* Aumenta o ícone ao passar o mouse */
-    filter: brightness(1.5); /* Dá um efeito de brilho */
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6); /* Adiciona brilho ao redor */
-}
-
-/* Estilização do conteúdo sobre a imagem */
-.content {
-    position: relative;
-    text-align: center;
-    color: white;
-    margin-top: 100px; /* Ajusta a posição do texto */
-}
-
-/* Ajustes nos textos */
-h1 {
-    font-size: 42px;
-    font-weight: bold;
-}
-
-h1 span {
-    color: #00aaff; /* Destaque no nome */
-}
-
-h3 {
-    font-size: 24px;
-    color: #ddd;
-}
-
-
-
-/* Efeito ao passar o mouse */
-.perfil img:hover {
-    opacity: 1; /* Fica totalmente visível */
-    transform: scale(1.1); /* Aumenta um pouco */
 }
